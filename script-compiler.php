@@ -655,7 +655,7 @@ input, textarea {
 </tr>
 <tr>
 	<td>Firefox max version:</td>
-	<td><input type='text' name='maxVersion' value='3.6.*' /></td>
+	<td><input type='text' name='maxVersion' value='19.*' /></td>
 </tr>
 <tr>
 	<td>User script:</td>
