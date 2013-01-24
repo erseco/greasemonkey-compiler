@@ -670,7 +670,7 @@ input, textarea {
 
 <iframe src='about:blank' width='98%' height='0' frameborder='0' name='builder'></iframe>
 
-<p><a href='script-compiler.phps'>View Source Code</a></p>
+<p><a href='https://github.com/arantius/greasemonkey-compiler/blob/master/script-compiler.php'>View Source Code</a></p>
 
 </body>
 </html>
