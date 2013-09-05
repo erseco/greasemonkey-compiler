@@ -120,12 +120,12 @@ if (!empty($_POST)) {
 	if (empty($data['include'])) {
 		$data['include']='true';
 	} else {
-		$data['include']='( /'.implode('/.test(href) || /', $data['include']).'/.test(href) )';
+		$data['include']='( /'.implode('/i.test(href) || /', $data['include']).'/i.test(href) )';
 	}
 	if (empty($data['exclude'])) {
 		$data['exclude']='true';
 	} else {
-		$data['exclude']='!( /'.implode('/.test(href) || /', $data['exclude']).'/.test(href) )';
+		$data['exclude']='!( /'.implode('/i.test(href) || /', $data['exclude']).'/i.test(href) )';
 	}
 
 	$xmlProlog='<?xml version="1.0"?>';
