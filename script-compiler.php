@@ -139,7 +139,7 @@ overlay	chrome://browser/content/browser.xul	chrome://\$shortname/content/script
 EOF;
 
 	$xpi['install.rdf']=<<<EOF
-{$xmlProlog}<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#"><Description about="urn:mozilla:install-manifest"><em:id>{\$guid}</em:id><em:name>\$shortname</em:name><em:version>\$version</em:version><em:description>\$description</em:description><em:creator>\$creator</em:creator><em:contributor>Greasemonkey Compiler by Anthony Lieuallen;</em:contributor><em:contributor>http://arantius.com/</em:contributor><em:homepageURL>\$homepage</em:homepageURL><em:targetApplication><Description><em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id><em:minVersion>\$minVersion</em:minVersion><em:maxVersion>\$maxVersion</em:maxVersion></Description></em:targetApplication></Description></RDF>
+{$xmlProlog}<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#"><Description about="urn:mozilla:install-manifest"><em:id>{\$guid}</em:id><em:name>\$shortname</em:name><em:version>\$version</em:version><em:description>\$description</em:description><em:creator>\$creator</em:creator><em:contributor>Greasemonkey Compiler by Anthony Lieuallen;</em:contributor><em:contributor>http://arantius.com/</em:contributor><em:homepageURL>\$homepage</em:homepageURL><em:targetApplication><Description><em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id><em:minVersion>\$minVersion</em:minVersion><em:maxVersion>\$maxVersion</em:maxVersion><em:bootstrap>true</em:bootstrap></Description></em:targetApplication></Description></RDF>
 EOF;
 
 	$xpi['content/script-compiler-overlay.xul']=<<<EOF
